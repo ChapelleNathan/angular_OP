@@ -20,6 +20,6 @@ export class LandingPageComponent implements OnInit {
   }
 
   onSubmitForm(form: NgForm) {
-    console.log(form.value.userEmail)
+    console.log(form.value)
   }
 }
