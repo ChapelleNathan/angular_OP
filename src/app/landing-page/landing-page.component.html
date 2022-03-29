@@ -2,4 +2,9 @@
     <h2>Bienvenue sur SnapFace</h2>
     <h3>L'application qui snap la face !</h3>
     <img src="https://c.tenor.com/HBwmkfq_PFkAAAAd/leonardo-dicaprio-wolf-of-wall-street.gif" alt="leonardo da vinci">
+    <form #emailForm="ngForm" (ngSubmit)="onSubmitForm(emailForm)">
+        <label for="emailInput">Inscrivez vous a notre newsletter !</label>
+        <input type="email" name="userEmail" id="emailInput" [(ngModel)]="userEmail">
+        <button type="submit">M'inscrire</button>
+    </form>
 </div>
